@@ -1,0 +1,10 @@
+test:
+	com.google.json.JsonSanitizerTest:testLongOctalNumberWithBadDigits
+
+caller:
+	mil.dds.anet.utils.utils:sanitizeJson(java.lang.String)
+
+	direct call
+	
+vulnerable method: 
+	com.google.json.JsonSanitizer,sanitize(java.lang.String)

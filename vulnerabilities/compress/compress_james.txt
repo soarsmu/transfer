@@ -1,0 +1,8 @@
+test: org.apache.commons.compress.archivers.zip.NioZipEncodingTest:umlautToUTF8
+
+caller:
+	org.apache.james.mailbox.backup.zip.Zipper:storeInArchive(org.apache.james.mailbox.backup.MailboxWithAnnotations,org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream)
+	
+
+vulnerable function:
+	org.apache.commons.compress.archivers.zip.NioZipEncoding,encode(java.lang.String)

@@ -1,0 +1,1 @@
+CLASSPATH=test-data java -jar ~/repos/transfer_evosuite/master/target/evosuite-master-1.1.1-SNAPSHOT.jar -class com.github.junrar.extract.ExtractArchive -projectCP classes/:junrar-7.4.0.jar:junrar-7.4.0-tests.jar  -Djunit=com.github.junrar.ArchiveTest -Dselected_junit=com.github.junrar.ArchiveTest -Dcarve_object_pool=true -Dsandbox=false -Dvirtual_fs=false -Dsearch_budget=600

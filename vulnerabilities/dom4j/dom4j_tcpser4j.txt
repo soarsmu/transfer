@@ -1,0 +1,9 @@
+
+callee:
+	org.dom4j.DocumentHelper,createElement(java.lang.String)
+
+test:
+	createElementAmpersand
+
+caller:
+	PhoneBook:writeXML(java.lang.String)

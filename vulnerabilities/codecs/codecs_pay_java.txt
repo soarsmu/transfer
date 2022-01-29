@@ -1,0 +1,10 @@
+test:
+	org.apache.commons.codec.binary.Base64Test:testBase64ImpossibleSamples
+
+caller:
+	com.egzosn.pay.common.util.sign.encrypt.Base64:decodeBase64(java.lang.String)
+
+
+vulnerable function:
+	org/apache/commons/codec/binary/Base64,decode(java.lang.String)
+

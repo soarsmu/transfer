@@ -1,0 +1,1 @@
+java -jar ~/repos/transfer_evosuite/master/target/evosuite-master-1.1.1-SNAPSHOT.jar -class PhoneBook -projectCP classes/:dom4j-2.1.3.jar:junit-4.13.2.jar -Djunit=AllowedCharsTest  -Dselected_junit=AllowedCharsTest -Dcarve_object_pool=true -Dinstrument_context=true -Dsearch_budget=600

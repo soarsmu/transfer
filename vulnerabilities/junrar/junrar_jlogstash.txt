@@ -1,0 +1,10 @@
+test: com.github.junrar.testUtil.SimpleTest:testTikaDocs
+
+caller:
+	com.dtstack.jlogstash.inputs.ReadRarFile:createInstance(String, String, ConcurrentHashMap<String, Long>)	
+	com.dtstack.jlogstash.inputs.ReadRarFile:init()
+	com.github.junrar.Archive,<init>(java.io.File)
+	
+vulnerable method:
+	com.github.junrar.Archive,<init>(java.io.File)
+

@@ -1,0 +1,10 @@
+test:
+	org.apache.commons.codec.binary.Base64Test:testBase64ImpossibleSamples
+
+caller:
+	org.apache.hadoop.security.SaslRpcServer:decodeIdentifier(java.lang.String)
+
+
+vulnerable function:
+	org/apache/commons/codec/binary/Base64,decode(java.lang.String)
+

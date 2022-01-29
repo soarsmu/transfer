@@ -1,0 +1,8 @@
+test: 
+	org.junit.rules.TempFolderRuleTest:tempFolderIsOnlyAccessibleByOwner
+
+caller:
+	org.sonar.api.impl.utils.JUnitTempFolder:newDir()
+
+vulnerable function:
+	org.junit.rules.TemporaryFolder,createTemporaryFolderIn(java.io.File)

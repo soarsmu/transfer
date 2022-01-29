@@ -1,0 +1,12 @@
+test:
+	json-smart/src/test/java/net/minidev/json/test/TestBigValue.java
+	testBigDouble
+
+
+call graph:
+	org.apache.jmeter.visualizers.RenderAsJSON:prettyJSON(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+	org.apache.jmeter.visualizers.RenderAsJSON:prettyJSON(Ljava/lang/String;)Ljava/lang/String;
+	net.minidev.json.parser.JSONParser:parse(Ljava/lang/String;)Ljava/lang/Object;
+	net.minidev.json.parser.JSONParser:<init>(I)V
+	net.minidev.json.parser.JSONParser:getPString()Lnet/minidev/json/parser/JSONParserString;
+

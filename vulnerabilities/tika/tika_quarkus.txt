@@ -1,0 +1,8 @@
+test: testQuineXHTML
+
+caller:
+	io.quarkus.tika.TikaParser:parse(java.io.InputStream,org.xml.sax.ContentHandler)
+
+
+vulnerable function:
+	org.apache.tika.parser.AutoDetectParser,parse(java.io.InputStream,org.xml.sax.ContentHandler,org.apache.tika.metadata.Metadata,org.apache.tika.parser.ParseContext)

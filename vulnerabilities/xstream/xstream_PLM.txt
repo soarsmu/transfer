@@ -1,0 +1,9 @@
+test:
+	com.thoughtworks.acceptance.SecurityVulnerabilityTest:testCannotInjectConvertImageIOContainsFilterWithUnconfiguredSecurityFramework
+
+
+caller:
+	plm.common.utils.XMLConfig:toBean(java.lang.String,java.lang.Class)
+
+vulnerable function:
+	com.thoughtworks.xstream.XStream,fromXML(java.lang.String)

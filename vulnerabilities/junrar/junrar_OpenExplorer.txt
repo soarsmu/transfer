@@ -1,0 +1,9 @@
+test: com.github.junrar.testUtil.SimpleTest:testTikaDocs
+
+caller:
+	com.github.junrar.extract.ExtractArchive:extractArchive(java.io.File,java.io.File)
+
+	
+vulnerable method:
+	com.github.junrar.Archive,<init>(java.io.File)
+

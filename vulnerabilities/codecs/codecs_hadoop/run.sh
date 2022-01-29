@@ -1,0 +1,1 @@
+java -jar ~/repos/transfer_evosuite/master/target/evosuite-master-1.1.1-SNAPSHOT.jar -class  org.apache.hadoop.security.SaslRpcServer  -projectCP classes:commons-codec-1.15.jar:commons-codec-1.13-tests.jar -Djunit=org.apache.commons.codec.binary.Base64Test -Dselected_junit=org.apache.commons.codec.binary.Base64Test  -Dcarve_object_pool=true -Dsearch_budget=600

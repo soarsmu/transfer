@@ -1,0 +1,9 @@
+test: 
+	org.junit.rules.TempFolderRuleTest:tempFolderIsOnlyAccessibleByOwner
+
+caller:
+	com.google.gerrit.server.git.MultiBaseLocalDiskRepositoryManagerTest:listReturnRepoFromProperLocation()
+
+
+vulnerable function:
+	org.junit.rules.TemporaryFolder,createTemporaryFolderIn(java.io.File)

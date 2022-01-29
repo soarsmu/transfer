@@ -1,0 +1,9 @@
+test:
+	org.bouncycastle.crypto.test.OpenBSDBCryptTest:comparePasswords_bcrypt
+
+caller:
+	org.jivesoftware.openfire.auth.JDBCAuthProvider:comparePasswords(java.lang.String,java.lang.String)
+	direct call
+
+vulnerable library function:
+	org.bouncycastle.crypto.generators.OpenBSDBCrypt,checkPassword(java.lang.String;[C)

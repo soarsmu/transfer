@@ -1,0 +1,9 @@
+test:
+	com.thoughtworks.acceptance.SecurityVulnerabilityTest:testDeniedInstanceOfVoid
+
+
+caller:
+	net.sourceforge.ondex.marshal.Marshaller:fromXML(java.lang.String)
+
+vulnerable function:
+	com.thoughtworks.xstream.XStream,fromXML(java.lang.String)

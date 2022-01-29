@@ -1,0 +1,12 @@
+test:
+	json-smart/src/test/java/net/minidev/json/test/TestBigValue.java
+	testBigDouble
+
+
+caller:
+	io.axoniq.axonserver.localstorage.query.result.StringExpressionResult:asJson()
+
+
+vulnerable function:
+	
+	net.minidev.json.parser.JSONParser,parse(java.lang.String)

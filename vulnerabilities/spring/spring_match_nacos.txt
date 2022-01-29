@@ -1,0 +1,8 @@
+callee:
+	org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder,matches(java.lang.CharSequence,java.lang.String)
+caller:
+	com.alibaba.nacos.console.utils.PasswordEncoderUtil:matches(java.lang.String,java.lang.String) 
+
+
+test:
+	matchNullRawPassword

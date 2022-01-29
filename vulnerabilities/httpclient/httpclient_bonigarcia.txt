@@ -1,0 +1,19 @@
+test:
+	httpclient5/src/test/java/org/apache/hc/client5/http/utils/TestURIUtils.java 
+	testExtractHost
+
+caller:
+	io.github.bonigarcia.wdm.online.HttpClient:execute(org.apache.hc.core5.http.ClassicHttpRequest)
+
+
+	org.apache.hc.client5.http.impl.classic.CloseableHttpClient:execute(Lorg/apache/hc/core5/http/ClassicHttpRequest;Lorg/apache/hc/core5/http/protocol/HttpContext;)Lorg/apache/hc/client5/http/impl/classic/CloseableHttpResponse;
+	org.apache.hc.client5.http.routing.RoutingSupport:determineHost(Lorg/apache/hc/core5/http/HttpRequest;)Lorg/apache/hc/core5/http/HttpHost;
+	org.apache.hc.client5.http.impl.classic.CloseableHttpClient:determineTarget(Lorg/apache/hc/core5/http/ClassicHttpRequest;)Lorg/apache/hc/core5/http/HttpHost;
+	org.apache.hc.client5.http.utils.URIUtils:extractHost(Ljava/net/URI;)Lorg/apache/hc/core5/http/HttpHost;
+	org.apache.hc.client5.http.impl.classic.CloseableHttpClient:execute(Lorg/apache/hc/core5/http/ClassicHttpRequest;)Lorg/apache/hc/client5/http/impl/classic/CloseableHttpResponse;
+	io.github.bonigarcia.wdm.online.HttpClient:execute(Lorg/apache/hc/core5/http/ClassicHttpRequest;)Lorg/apache/hc/client5/http/impl/classic/CloseableHttpResponse;
+
+vulnerable function:
+	org/apache/hc/client5/http/utils/URIUtils,extractHost(java.net.URI)
+
+

@@ -1,0 +1,8 @@
+caller:
+	ZipFile:<init>(java.io.File)
+
+callee:
+	net.lingala.zip4j.ZipFile,<init>(java.io.File;[C)
+
+test:
+	testZipFileConstructorThrowsIllegalArgumentExceptionWhenFileParameterIsNull
